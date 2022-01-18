@@ -1,0 +1,255 @@
+.main {
+  max-width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main .child {
+  width: 30%;
+}
+
+.addItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addItems input {
+  padding: 15px 217px;
+  border-radius: 10px;
+  outline: none;
+  margin-left: 15px;
+}
+
+.addItems .add-btn {
+  margin-left: 15px;
+  align-items: center;
+  border-radius: 50px;
+  width: 30px;
+  min-height: 30px;
+  text-align: center;
+}
+
+
+
+/* ----------------------------------------------------- */
+
+/* .showItems .eachItem{
+  display: flex;
+  justify-content: space-around;
+} */
+
+.fa {
+  margin-left: -2.5rem;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  background-color: #fff;
+  background-image: none;
+  color: #666;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  font-size: 2rem;
+}
+.fa:hover {
+  /* border: 2px solid rgb(47, 214, 122); */
+  color: rgb(47, 214, 122);
+}
+
+.fa-plus:before {
+  content: "\f067";
+  font-size: 1.5rem;
+}
+
+
+/* ---------------------------------------------------------- */
+
+.showItems {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.eachItem {
+  background: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 0.7rem;
+  margin-left: 1rem;
+  min-width: 20rem;
+  word-break: break-word;
+  background: rgb(85, 41, 220);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.eachItem:hover {
+  /* background: rgb(249, 249, 252); */
+  color: rgb(85, 41, 220) !important;
+}
+
+.showItems .eachItem h3 {
+  font-size: 1rem;
+  color: #fff;
+}
+
+
+
+/* ------------------------------------- */
+.btn1 {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn1:hover {
+  text-decoration: none;
+}
+
+.btnEffect {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  outline: solid 2px #000;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.btnEffect::before,
+.btnEffect span {
+  margin: 0 auto;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 0.4s;
+}
+
+.btnEffect:hover {
+  background-color: rgb(85, 41, 220);
+}
+
+.btnEffect:hover span {
+  -webkit-transform: translateY(-400%) scale(-0.1, 20);
+  transform: translateY(-400%) scale(-0.1, 20);
+}
+
+.btnEffect::before {
+  content: attr(data-sm-link-text);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1, 20);
+  transform: translateY(500%) scale(-0.1, 20);
+}
+
+.btnEffect:hover::before {
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1, 1);
+  transform: translateY(0) scale(1, 1);
+}
+
+/* -------------------------------------------------------------- */
+.fa-trash-alt,
+.fa-edit {
+  /* margin-left: -2.5rem; */
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  color: rgb(251, 251, 251);
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  font-size: 1.3rem;
+  /* color: rgb(47, 214, 122); */
+}
+
+
+.addItems .fa-edit {
+  color: rgb(47, 214, 122);
+}
+
+.fa-edit {
+  margin-left: -3.5rem;
+}
+
+/*  Please Subscribe to ThapaTechnical Youtube Channel
+/* Click Here: https://www.youtube.com/thapatechnical  */
+
+.eachItem:hover .fa-trash-alt {
+  color: rgb(214, 47, 61);
+}
+
+.todo-btn {
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ------------------------------------------------------------- */
+
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+ 
+.box {
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(110vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+ 
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(35% - 30px);
+  top: calc(110vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.popUpInput {
+  padding: 8px 30px;
+  border-radius: 5px;
+}
+
+.popUpInput:focus{
+  border: 3px solid rgb(85, 41, 220);
+  outline: none;
+}
+
+.btnUpdate {
+  padding: 8px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnUpdate:focus {
+  border: 3px solid rgb(85, 41, 220);
+  outline: none;
+}
